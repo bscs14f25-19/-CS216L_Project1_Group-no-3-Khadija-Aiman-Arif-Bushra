@@ -1,9 +1,12 @@
- <h1 align="center">Task Manager Using Linked List and Stack</h1>
+ <h1 align="center">CS216L_Project1_Group-no-3</h1>
+<h1 align="center">Task Manager Using Linked List and Stack</h1>
 
 **Group Members:**
 
 Aiman Arif[19]
+
 Khadja[72]
+
 Bushra[82]
 
 **2. Project Title**
@@ -69,28 +72,19 @@ Linear Search checks tasks one by one until the required title is found or the l
 
 Bubble Sort compares adjacent tasks and swaps their task data when their priorities are in the wrong order. Tasks are arranged from High priority to Low priority.
 
-**7. Time Complexity Analysis**
-Let n represent the number of tasks.
+## Time Complexity
 
-Operation	Time Complexity
-
-Insert a task	O(n)
-
-Delete a task by ID	O(n)
-
-Linear Search	O(n)
-
-Bubble Sort — Best Case	O(n)
-
-Bubble Sort — Average Case	O(n²)
-
-Bubble Sort — Worst Case	O(n²)
-
-Stack Push	O(1)
-
-Stack Pop	O(1)
-
-Stack Peek	O(1)
+| Operation | Time Complexity |
+|---|---|
+| Insert a task | O(n) |
+| Delete a task by ID | O(n) |
+| Linear Search | O(n) |
+| Bubble Sort — Best Case | O(n) |
+| Bubble Sort — Average Case | O(n²) |
+| Bubble Sort — Worst Case | O(n²) |
+| Stack Push | O(1) |
+| Stack Pop | O(1) |
+| Stack Peek | O(1) |
 
 **Explanation:**
 
