@@ -1,4 +1,4 @@
-**Task Manager Using Linked List and Stack**
+ <h1 align="center">Task Manager Using Linked List and Stack</h1>
 
 **2. Project Title**
 
