@@ -1,5 +1,11 @@
  <h1 align="center">Task Manager Using Linked List and Stack</h1>
 
+**Group Members:**
+
+Aiman Arif[19]
+Khadja[72]
+Bushra[82]
+
 **2. Project Title**
 
 Task Manager — CS216L Project 1
