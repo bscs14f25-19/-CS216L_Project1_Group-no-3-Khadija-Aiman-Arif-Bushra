@@ -1,135 +1,58 @@
- <h1 align="center">CS216L_Project1_Group-no-3</h1>
-<h1 align="center">Task Manager Using Linked List and Stack</h1>
+****CS216L Project 1: Advanced Task Manager Application****
 
-**Group Members:**
+****Group Information****
 
-Aiman Arif[19]
+****Group Name: KBA****
 
-Khadja[72]
+****Members:****
 
-Bushra[82]
+Khadija Nafeh
 
-**2. Project Title**
+Aiman Arif
 
-Task Manager — CS216L Project 1
+Bushra Rauf
 
-**3. Project Description**
-Task Manager is a console-based Java application designed to manage tasks efficiently. It allows users to add, delete, search, sort, and view tasks. The application also provides an Undo feature to reverse the last Add or Delete action.
-This project demonstrates the use of fundamental data structures and algorithms in Java.
+****Project Title****
 
-**4. Data Structures Used:**
+Colorized Command-Line Task Manager
 
-**Singly Linked List:**
+****Description****
 
-A singly linked list is used to store tasks. Each task contains:
+A terminal-based colorized task management dashboard built using custom memory-managed data structures in Java. It allows dynamic task creation, priority sorting, quick linear searches, tracking, and sequential state rollbacks using an action history layers system. The application is built entirely from scratch without using any built-in Java collection libraries (like ArrayList or Vector).
 
-•	Task ID
+****Data Structures Used****
 
-•	Task title
+Singly Linked List (TaskList): Manages live operations on the main sequence of task elements.
 
-•	Task priority
+Custom Memory Stack (UndoStack): Tracks record changes to drive real-time "Undo Last Action" commands using Last-In, First-Out (LIFO) logic.
+****Feature Summary****
+Add Task: Dynamically appends a new structural node to the tail of the linked list tracking matrix.
 
-•	Reference to the next task
+Delete Task: Traverses and safely clears target identification keys out of system memory.
 
-It supports adding, deleting, searching, sorting, and displaying tasks.
+Search Task: Uses Linear Search to evaluate exact match criteria across title strings.
 
-**Stack:**
+Sort Tasks: Dynamically re-orders system queues using a custom Bubble Sort algorithm matrix.
 
-A stack is used to store task actions for the Undo feature. It follows the LIFO (Last In, First Out) principle.
+View Tasks: Visualizes systemic properties using a custom ANSI-colored ASCII table dashboard layout.
 
-Stack operations include:
+Undo Management: Pops recent history flags down off the stack layer to restore previous states.
 
-•	**Push**: Adds an action to the stack.
 
-•	**Pop**: Removes and returns the latest action.
+## Algorithmic Complexity Table
 
-•	**Peek**: Views the latest action without removing it.
+| Operation | Target Object / Routine | Best Case Time | Worst Case Time | Complexity Notes |
+|---|---|---|---|---|
+| Insert | Singly Linked List Tail | O(1) | O(N) | Requires list traversal to find the tail node. |
+| Delete | Singly Linked List Search | O(1) | O(N) | O(1) if head matches, otherwise requires list traversal. |
+| Search | Linear Search Algorithm | O(1) | O(N) | Scans nodes linearly until the title match condition is hit. |
+| Sort | Bubble Sort Algorithm | O(N) | O(N²) | O(N) if already sorted; O(N²) if reversed. |
+| Push | Custom Stack Layer | O(1) | O(1) | Direct head replacement logic sequence. |
+| Pop | Custom Stack Layer | O(1) | O(1) | Drops top item references instantly. |
 
-**5. Features**
-1.	Add a new task.
-2.	Delete a task using its ID.
-3.	Search for a task by title using Linear Search.
-4.	Sort tasks by priority using Bubble Sort.
-5.	Display all active tasks.
-6.	Undo the last Add or Delete action.
-7.	View the most recent saved action using Peek.
-8.	Validate numeric input and priority values.
-9.	Prevent duplicate task IDs.
-10.	Display task priorities as High, Medium, or Low.
+****GitHub Repository Link****
 
-**Priority Levels**
-•	1 — High
-•	2 — Medium
-•	3 — Low
-
-**6. Algorithms Used**
-
-**Linear Search**
-
-Linear Search checks tasks one by one until the required title is found or the list ends.
-
-**Bubble Sort**
-
-Bubble Sort compares adjacent tasks and swaps their task data when their priorities are in the wrong order. Tasks are arranged from High priority to Low priority.
-
-## Time Complexity
-
-| Operation | Time Complexity |
-|---|---|
-| Insert a task | O(n) |
-| Delete a task by ID | O(n) |
-| Linear Search | O(n) |
-| Bubble Sort — Best Case | O(n) |
-| Bubble Sort — Average Case | O(n²) |
-| Bubble Sort — Worst Case | O(n²) |
-| Stack Push | O(1) |
-| Stack Pop | O(1) |
-| Stack Peek | O(1) |
-
-**Explanation:**
-
-•	Insertion takes O(n) because the program traverses the list to reach its end.
-
-•	Deletion takes O(n) because the program may need to search for the task.
-
-•	Linear Search takes O(n) because tasks are checked one by one.
-
-•	Bubble Sort takes O(n²) in the average and worst cases.
-
-•	Push, Pop, and Peek take O(1) because they operate directly on the top of the stack.
-
-**8. Java Source Files**
-The project contains four Java source files:
-
-•	**Task.java** — Defines the Task class and its attributes.
-
-•	**Action.java** — Defines an action stored in the undo stack.
-
-•	**TaskEngine.java** — Implements the linked list, stack, searching, sorting, and undo operations.
-
-•	**TaskManager.java** — Contains the main method and interactive menu.
-
-**9.Github repository link:**
-
-https://github.com/bscs14f25-19/-CS216L_Project1_Group-no-3-Khadija-Aiman-Arif-Bushra
-
-**Source Code**
-
-Class Action:
-
-https://github.com/bscs14f25-19/-CS216L_Project1_Group-no-3-Khadija-Aiman-Arif-Bushra/blob/main/Action.java
-
-Class Task:
-
-https://github.com/bscs14f25-19/-CS216L_Project1_Group-no-3-Khadija-Aiman-Arif-Bushra/blob/main/Task.java
-
-Class TaskEngine:
-
-https://github.com/bscs14f25-19/-CS216L_Project1_Group-no-3-Khadija-Aiman-Arif-Bushra/blob/main/TaskEngine.java
-
-Class TaskManager:
+👉 Click here to view our TaskManager.java Source Code
 
 https://github.com/bscs14f25-19/-CS216L_Project1_Group-no-3-Khadija-Aiman-Arif-Bushra/blob/main/TaskManager.java
 
-**10. Conclusion**
-The Task Manager project demonstrates how linked lists, stacks, Linear Search, and Bubble Sort can be used in a practical Java application. It also provides experience with menu-driven programming, input validation, and basic data structure operations.
